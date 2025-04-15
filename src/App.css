@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Patrick+Hand+SC&family=Ubuntu:ital@1&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  h1, h2, h3, p {
+    font-family: 'Patrick Hand SC', cursive;
+  }
+  
+
+.colorFondoPrincipal {
+    background-color: rgba(245, 246, 241, 0.773);
+}

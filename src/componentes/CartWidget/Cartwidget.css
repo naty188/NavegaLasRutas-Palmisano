@@ -1,0 +1,13 @@
+div {
+    display: flex;
+    justify-content: end; 
+    align-items: center;
+  }
+
+
+.imgCarrito{
+    width: 80px;
+    cursor: pointer;
+    
+}
+

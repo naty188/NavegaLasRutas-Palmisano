@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Patrick Hand SC', cursive;
+  background-color: #fefefe;
+  color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid orangered;
+  padding: 10px;
+  background-color: rgb(252, 204, 141);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  
+  
+}
+
+header h1 {
+  margin-left: 20px;
+  color: black;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  padding-inline: 10px;
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.logoTienda {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.item-list-container {
+  margin-top: 140px;
+  margin-bottom: 40px;
+  background-color: #fff8ee;
+  padding: 40px;
+  width: fit-content;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tituloProductos {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(251, 82, 4);
+  text-transform: uppercase;
+  margin: 30px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-card h3 {
+  font-size: 1.25rem;
+  color: #333;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.product-card p {
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 0 10px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  color: black;
+  text-decoration:underline;
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.5rem;
+}
+
+a:visited {
+  color: black;
+}
