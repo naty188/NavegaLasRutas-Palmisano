@@ -18,7 +18,7 @@ Este es un curso de e+commerce Basico en React. La aplicacion permite ver una li
 
 ## Agregado de dominio
 
-https://proyectofinal-palmisano.netlify.app/categoria/dibujitos
+**https://proyectofinal-palmisano.netlify.app/categoria/dibujitos**
 
 ## Instalacion
 - Clonar el repositorio en tu maquina
