@@ -149,16 +149,17 @@ h2 {
 }
 
 
-a,
-a:visited,
-a:link,
-a:active {
-  color: black;
-  text-decoration: none;
+nav a,
+nav a:link,
+nav a:visited,
+nav a:active {
+  color: black !important;
+  text-decoration: none !important;
+  font-size: 1.2rem;
   font-family: 'Patrick Hand SC', cursive;
-  font-size: 1.5rem;
+  padding: 10px;
 }
 
-a:hover {
-  text-decoration: underline;
+nav a:hover {
+  text-decoration: underline !important;
 }
