@@ -17,7 +17,6 @@ const ItemCount = ({ stock, inicial, funcionAgregar }) => {
     }
   };
 
-  console.log(contador);
 
   return (
     <div className="itemCountContainer">

@@ -1,12 +1,136 @@
-# React + Vite
+# eldiabloespuerco
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un curso de e+commerce Basico en React. La aplicacion permite ver una lista de productos de remeras con estampas diversas que se almacenan y compran en linea. Los productos y las ordenes de compra se almacenan en Firebase.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas:
+- Vite
+- React
+- Router-Router-DOM
+- Firebase
+- Toastify
+- Boostrap 5.3.6
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades de la aplicacion:
+- Ver una lista de productos disponibles
+- Agregar productos al Carrito de compras
+- Ver el carrito de compras
+- Realizar una orden de compras con los datos del usuario
 
-## Expanding the ESLint configuration
+## Agregado de dominio
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalacion
+- Clonar el repositorio en tu maquina
+- Abrir la terminal en el directorio del proyecto
+- Ejecutar el comando npm install para instalar las dependecias
+- Ejecutar el comando install para iniciar la aplicacion
+- Abrir el navegasdor de manera local con le localhost5173, para ver en accion la aplicacion
+
+
+## Componentes ¿ Que incluyen y para que sirve cada uno?
+
+- Navbar: 
+
+- Logo de la tienda
+
+- Enlaces a las distintas categorías
+
+- El componente CartWidget con el ícono del carrito
+
+ Sirve para moverse por toda la aplicación.
+
+- Cart:
+
+- Ver cantidades, subtotales y total
+
+- Eliminar productos del carrito
+
+- Acceder al botón de "Finalizar compra"
+
+ Sirve para revisar y gestionar lo que vas a comprar.
+
+- Cartwidget:
+
+- Muestra la cantidad de productos seleccionados
+
+- Permite acceder al carrito (Cart) al hacer clic
+
+Sirve como acceso rápido al carrito de compras.
+
+- Checkout:
+
+- Ingresa sus datos (nombre, email, etc.)
+
+- Confirma la orden
+
+- Se genera la orden de compra en Firebase
+
+Sirve para finalizar la compra y registrar la orden.
+
+- Error: 
+
+- Se muestra cuando el usuario va a una ruta que no existe o hay un error en la navegación.
+
+Sirve como página 404 o de error general.
+
+- Item:
+
+- Imagen
+
+- Nombre
+
+- Precio
+
+- Botón "Ver detalles"
+
+Sirve para representar cada producto de forma resumida.
+
+- ItemCount:
+
+ - Botones + y - para elegir la cantidad
+
+- Botón "Agregar al carrito"
+
+Sirve para que el usuario seleccione cuántas unidades quiere.
+
+- ItemDetail:
+
+- Muestra la información completa de un producto: descripción, imagen grande, precio, stock, y el ItemCount.
+
+Sirve para ver los detalles del producto y agregarlo al carrito.
+
+- itemDetailContainer:
+
+- Consulta el producto desde Firebase según el ID
+
+- Muestra el ItemDetail una vez que los datos están cargados
+
+Sirve para conectar los datos con la vista detallada de un producto.
+ 
+- ItemList:
+
+- Muestra una lista de varios productos, usando múltiples componentes Item.
+
+Sirve para mostrar todos los productos de una categoría o todos en general.
+
+- ItemListContainer:
+
+- Obtiene los productos desde Firebase (todos o por categoría)
+
+- Muestra un Loader mientras se cargan
+
+- Luego muestra ItemList
+
+Sirve como contenedor de la vista principal de productos.
+
+- Loader:
+
+- Muestra un spinner de carga mientras se están obteniendo los datos de Firebase.
+
+Sirve para dar feedback visual al usuario mientras se carga algo.
+
+
+
+
+
+
+

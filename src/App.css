@@ -12,3 +12,62 @@ body {
 .colorFondoPrincipal {
     background-color: rgba(245, 246, 241, 0.773);
 }
+
+
+
+.cart-container {
+  max-width: 800px;
+  margin: 170px auto 30px auto; 
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: auto;
+  overflow: visible;
+}
+
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  padding: 0 20px;
+  margin-top: 50px; 
+}
+
+
+.cart-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  gap: 20px;
+}
+
+.cart-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #f7931e; 
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.cart-buttons button:hover {
+  background-color: #e67e00;
+}
+
+
+.cart-container h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}

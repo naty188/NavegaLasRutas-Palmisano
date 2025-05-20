@@ -2,19 +2,33 @@ import React, { useState } from 'react'
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
+import { CarritoContext } from '../../context/CarritoContext'
+import { useContext } from 'react'
+import { toast } from 'react-toastify'
 
-const ItemDetail = ({ id, nombre, precio, img, stock }) => {
+
+
+const ItemDetail = ({ id, nombre, precio, img, stock, descripcion }) => {
   const [agregarCantidad, setAgregarCantidad] = useState(0)
 
-  // Función para manejar la cantidad agregada
-  const manejadorCantidad = (cantidad) => {
+  const { agregarAlCarrito } = useContext((CarritoContext))
+
+
+
+  
+
+    const manejadorCantidad = (cantidad) => {
     setAgregarCantidad(cantidad)
-    console.log("Productos agregados:", + cantidad)  // Verifica el valor en la consola
+     
+    
+    
+    const item ={id,nombre,precio}
+    agregarAlCarrito(item,cantidad) 
+    toast.success("Su compra fue enviada al carrito",{autoClose:1000, theme: "dark",position:"top-right"})
   }
 
-  // Verifica que la propiedad img tenga un valor válido
-  console.log("Ruta de la imagen:", img);
 
+  
   return (
     <div className='contenedorItemDetail'>
       <div className="itemImageContainer">
@@ -27,8 +41,7 @@ const ItemDetail = ({ id, nombre, precio, img, stock }) => {
         <h4>ID: {id}</h4>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Aliquid reprehenderit ducimus consequuntur magni id ratione quas quod nobis.
+         {descripcion}
         </p>
 
         {

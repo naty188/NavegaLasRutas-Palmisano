@@ -1,4 +1,4 @@
-/* Contenedor de los productos */
+
 .contenedorProductos {
   display: flex;
   flex-wrap: wrap;
