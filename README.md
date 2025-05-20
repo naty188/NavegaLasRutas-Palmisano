@@ -16,9 +16,6 @@ Este es un curso de e+commerce Basico en React. La aplicacion permite ver una li
 - Ver el carrito de compras
 - Realizar una orden de compras con los datos del usuario
 
-## Agregado de dominio
-
-**https://proyectofinal-palmisano.netlify.app/categoria/dibujitos**
 
 ## Instalacion
 - Clonar el repositorio en tu maquina
@@ -132,6 +129,9 @@ Sirve para dar feedback visual al usuario mientras se carga algo.
 
 
 
+## Dominio
+
+**https://proyectofinal-palmisano.netlify.app/categoria/dibujitos**
 
 
 
