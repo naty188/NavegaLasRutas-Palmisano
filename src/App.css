@@ -71,3 +71,35 @@ body {
   color: #333;
   margin-bottom: 20px;
 }
+
+
+@media (max-width: 768px) {
+  .cart-container {
+    margin: 100px 10px 20px 10px;
+    padding: 15px;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  .cart-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cart-buttons button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .empty-cart {
+    padding: 0 10px;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .cart-container h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
